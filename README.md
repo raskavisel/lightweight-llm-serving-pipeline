@@ -1,4 +1,4 @@
-# Mini LLM Serving & Retraining Pipeline
+# Lightweight LLM Serving & Retraining Pipeline
 
 **End-to-end lightweight pipeline for serving, monitoring and retraining open-source LLMs.**
 
