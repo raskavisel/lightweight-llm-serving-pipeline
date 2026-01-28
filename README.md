@@ -41,7 +41,7 @@ This is designed to emulate modern GenAI infrastructure practices and is fully c
 
 ### **1. Clone the repository**
 
-git clone <your-github-repo-url>
+git clone <https://github.com/raskavisel/mini-llm-serving-pipeline>
 cd mini-llm-serving-pipeline
 
 2. Install dependencies
@@ -54,6 +54,7 @@ Note: On mobile (Pydroid), MLflow installation can be skipped due to Rust/build 
 
 
 python -m uvicorn app:app --reload
+
 4. Send a POST request to generate a response
 
 Python
@@ -87,8 +88,8 @@ mini-llm-serving-pipeline/
 ├── requirements.txt # Python dependencies
 └── README.md        # Project documentation
 Future Enhancements
-Integrate real LLMs (LLaMA, Alpaca, GPT-like models)
-Add full MLflow tracking & model registry
-Support multi-entity model storage
-Implement token usage monitoring
-Deploy on cloud infrastructure for production readiness
+- Integrate real LLMs (LLaMA, Alpaca, GPT-like models)
+- Add full MLflow tracking & model registry
+- Support multi-entity model storage
+- Implement token usage monitoring
+- Deploy on cloud infrastructure for production readiness
