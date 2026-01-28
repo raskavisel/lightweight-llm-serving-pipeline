@@ -44,18 +44,18 @@ This is designed to emulate modern GenAI infrastructure practices and is fully c
 git clone <https://github.com/raskavisel/mini-llm-serving-pipeline>
 cd mini-llm-serving-pipeline
 
-2. Install dependencies
+### **2. Install dependencies**
 
 
 pip install -r requirements.txt
 Note: On mobile (Pydroid), MLflow installation can be skipped due to Rust/build dependency limitations.
 
-3. Start the API server
+### **3. Start the API server**
 
 
 python -m uvicorn app:app --reload
 
-4. Send a POST request to generate a response
+### **4. Send a POST request to generate a response**
 
 Python
 import requests
@@ -78,7 +78,7 @@ Note: The LLM responses are simulated for demonstration purposes. This project d
 
 When average latency exceeds the threshold, drift is detected and retraining is triggered automatically.
 
-Folder Structure:
+## Folder Structure:
 
 
 mini-llm-serving-pipeline/
@@ -90,7 +90,8 @@ mini-llm-serving-pipeline/
 ├── retrain.py       # Simulated retraining workflow
 ├── requirements.txt # Python dependencies
 └── README.md        # Project documentation
-Future Enhancements
+
+## Future Enhancements:
 - Integrate real LLMs (LLaMA, Alpaca, GPT-like models)
 - Add full MLflow tracking & model registry
 - Support multi-entity model storage
